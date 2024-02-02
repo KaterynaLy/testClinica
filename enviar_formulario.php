@@ -1,13 +1,16 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $nombre = $_POST["nombre"];
     $nombre_empresa = $_POST["nombre_empresa"];
     $email = $_POST["email"];
     $telefono = $_POST["telefono"];
     $proteccion_datos = isset($_POST["proteccion_datos"]) ? "Sí" : "No";
 
+    // Destinatarios predeterminados
     $destinatarios = array(
-        "dentalagp@gmail.com",
+        "dental-malaga.com",
         "katerynalysenkocurras@gmail.com",
     );
 
@@ -24,14 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "Reply-To: $email" . "\r\n" .
         "X-Mailer: PHP/" . phpversion();
 
-    foreach ($destinatarios as $correo) {
-        mail($correo, $asunto, $mensaje, $headers);
+    // Enviar el correo a todos los destinatarios
+    foreach ($destinatarios as $destinatario) {
+        mail($destinatario, $asunto, $mensaje, $headers);
     }
 
-    // Puedes redirigir al usuario a una página de confirmación o mostrar un mensaje de éxito aquí
-    echo "¡Formulario enviado con éxito!";
-} else {
-    // Manejar el acceso directo al script sin enviar el formulario
-    echo "Acceso no permitido";
+    // Redirigir o mostrar un mensaje de éxito
+    header("Location: gracias.html");
+    exit();
 }
-?>
