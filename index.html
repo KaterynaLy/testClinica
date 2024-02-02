@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <div class="container">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+        />
+        <link href="./css/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="./css/img/favicon.ico">
+
+        <title>Dental&Design</title>
+        </head>
+
+      <body>
+        <header class="header">
+          <div class="header-logo">
+              <a href="./index.html"><img src="./css/img/logo_black.png" alt="logo" width="150" height="150" class="logo">
+              </a>
+          </div>
+          <div class="header-redes">
+              <ul class="fourth-icon-list list">
+                <li class="fourth-item">
+                    <a class="fourth-icon-svg link" href="#">
+                        <svg class="fourth-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="fourth-item">
+                    <a class="fourth-icon-svg link" href="#">
+                        <svg class="fourth-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="fourth-item">
+                    <a class="fourth-icon-svg link" href="#">
+                        <svg class="fourth-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="fourth-item">
+                    <a class="fourth-icon-svg link" href="https://www.linkedin.com/company/dental-design-malaga/">
+                        <svg class="fourth-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+              </ul>
+          </div>      
+        </header>
+
+        <section>
+          <p class="web-info">
+            Estamos trabajando en nuestro sitio web. <br />
+            <p>Mientras tanto si perteneces a una empresa asociación o colectivos,
+            estamos preparando ofertas especiales, déjanos tus datos y te
+            contactamos a la brevedad.</p>
+          </p>
+
+          <form class="form-backgroud" action="enviar_formulario.php" method="post">
+            <label for="nombre">Nombre y Apellido :</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="nombre_empresa"
+              >Nombre de la empresa/asociación/colectivo:</label
+            >
+            <input type="text" id="nombre_empresa" name="nombre_empresa" required />
+
+            <label for="email">Email de contacto:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="proteccion_datos"
+              >Acepto la política de protección de datos:</label
+            >
+            <input
+              type="checkbox"
+              id="proteccion_datos"
+              name="proteccion_datos"
+              required
+            />
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+
+        <footer>
+          <address class="fooetr-address">
+            <ul class="footer-lu">
+                <p>Contacts:</p>
+                <li class="address-li link"><a href="mailto:clinicagp@gmail.com">clinicagp@gmail.com</a></li>
+                <li class="address-li link"><a href="">+34 672 958 402</a>
+                  <p>Dirección: C/Martin Garcia, 12 2C (esquina calle Larios, Malaga)</p>
+                </li>
+            </ul>
+        </address>
+        <div class="footer-info">
+          <ul>
+              <li>
+                <a href="./privacy.html">Privacy & Cookies</a></li>
+              <li>© Copyright 2024 DentalAGP Malaga. All rights reserved.
+              </li>
+          </ul>
+          
+        </div>
+          
+        </footer>
+      </body>
+    </div>
+</html>
