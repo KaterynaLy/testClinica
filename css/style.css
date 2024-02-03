@@ -151,6 +151,10 @@ footer {
     flex-direction: row;
 }
 
+.address-li {
+    padding: 8px;
+}
+
 .features {
     padding: 120px 0;
 }
@@ -207,11 +211,20 @@ footer {
  .fourth-icon {
      fill: #f4f4fd;
  }
+
 /*--privacy--*/
  .text-privacy {
     max-width: fit-content;
     justify-content: center;
     padding: 15px;
+ }
+
+ .proteccion_datos{
+    font-size: 8px;
+    text-align: center;
+ }
+ .politica {
+    color:#d8b805
  }
 
 @media only screen and (max-width: 600px) {
