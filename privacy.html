@@ -20,44 +20,9 @@
         <title>Dental&Design</title>
 
         <body>
-                    <header class="header">
-          <div class="header-logo">
-              <a href="./index.html"><img src="./css/img/logo_black.png" alt="logo" width="150" height="150" class="logo">
-              </a>
-          </div>
-          <div class="header-redes">
-              <ul class="fourth-icon-list list">
-                <li class="fourth-item">
-                    <a class="fourth-icon-svg link" href="#">
-                        <svg class="fourth-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-instagram-2"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="fourth-item">
-                    <a class="fourth-icon-svg link" href="#">
-                        <svg class="fourth-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-twitter-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="fourth-item">
-                    <a class="fourth-icon-svg link" href="#">
-                        <svg class="fourth-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-facebook-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="fourth-item">
-                    <a class="fourth-icon-svg link" href="#">
-                        <svg class="fourth-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-linkedin-1"></use>
-                        </svg>
-                    </a>
-                </li>
-              </ul>
-          </div>      
-        </header>
+            <header>
+            </header>
+
             <section>
                 <h2>Privacy & Cookies</h2>
                 <p class="text-privacy">
@@ -198,29 +163,21 @@
                     DENTAL & DESIGN utiliza las cookies, consulte la Política de Cookies.
                 </p>
             </section>
-           
-                        <footer>
-          <address class="fooetr-address">
-            <ul class="footer-lu">
-                <p>Contacts:</p>
-                <li class="address-li link"><a href="mailto:clinicagp@gmail.com">clinicagp@gmail.com</a></li>
-                <li class="address-li link"><a href="">+34 672 958 402</a>
-                  <p>Dirección: C/Martin Garcia, 12 2C (esquina calle Larios, Malaga)</p>
-                </li>
-            </ul>
-        </address>
-        <div class="footer-info">
-          <ul>
-              <li>
-                <a href="./privacy.html">Privacy & Cookies</a></li>
-              <li>© Copyright 2024 DentalAGP Malaga. All rights reserved.
-              </li>
-          </ul>
-          
-        </div>
-          
-        </footer>
-        </body>
-        
-    </div>
-</html>
+            <footer>
+            </footer>
+            <!-- Incluye el pie de página con JavaScript y jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script>
+                $(function(){
+                // Carga el contenido del pie de página
+                $("footer").load("./footer.html");
+                });
+            </script>
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script>
+                $(function(){
+                // Carga el contenido del pie de página
+                $("header").load("./header.html");
+                });
+            </script>
+  </html>

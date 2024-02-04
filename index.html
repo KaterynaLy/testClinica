@@ -13,45 +13,8 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-logo">
-          <a href="./index.html"><img src="./css/img/logo_black.png" alt="logo" width="150" height="150" class="logo">
-          </a>
-      </div>
-      <div class="header-redes">
-          <ul class="fourth-icon-list list">
-            <li class="fourth-item">
-                <a class="fourth-icon-svg link" href="#">
-                    <svg class="fourth-icon" width="16" height="16">
-                        <use href="./css/img/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="fourth-item">
-                <a class="fourth-icon-svg link" href="#">
-                    <svg class="fourth-icon" width="16" height="16">
-                        <use href="./css/img/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="fourth-item">
-                <a class="fourth-icon-svg link" href="#">
-                    <svg class="fourth-icon" width="16" height="16">
-                        <use href="./css/img/icons.svg#icon-facebook-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="fourth-item">
-                <a class="fourth-icon-svg link" href="https://www.linkedin.com/company/dental-design-malaga/">
-                    <svg class="fourth-icon" width="16" height="16">
-                        <use href="./css/img/icons.svg#icon-linkedin-1"></use>
-                    </svg>
-                </a>
-            </li>
-          </ul>
-      </div>      
+    <header>
     </header>
-
     <section>
       <p class="web-info">
         Estamos trabajando en nuestro sitio web.<br>
@@ -84,48 +47,21 @@
         
       </form>
     </section>
-
     <footer>
-      <address class="fooetr-address">
-          <ul class="footer-lu">Contacts:
-            <li class="address-li link">
-              <a href="mailto:clinicagp@gmail.com">
-                <svg class="fourth-icon" width="16" height="16">
-                  <use href="./css/img/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-                clinicagp@gmail.com
-              </a>
-            </li>
-            <li class="address-li link">
-              <a href="">
-                <svg class="fourth-icon" width="16" height="16">
-                  <use href="./css/img/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-                +34 672 958 402 (Recepción clinica) +34 951 473 301 (Fijo)
-              </a>
-            </li>
-            <li class="address-li link">
-              <a href="https://maps.app.goo.gl/GTZkcDkA75pqZxW56" target="_blank">
-                <svg class="fourth-icon" width="16" height="16">
-                  <use href="./css/img/icons.svg#icon-location"></use>
-                </svg>
-                C/Martin Garcia, 12 2C, 29005 Málaga
-              </a>
-            </li>
-            
-          </ul>
-      </address>
-      <div class="footer-info">
-        <ul>
-            <li>
-              <a href="./privacy.html">Privacy & Cooes</a></li>
-            <li>© Copyright 2024 Andaluza dental S.L. All rights reserved.
-            </li>
-        </ul>
-        
-      </div>
-        
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+        // Carga el contenido del pie de página
+        $("footer").load("./footer.html");
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+        // Carga el contenido del pie de página
+        $("header").load("./header.html");
+        });
+    </script>
   </body>
-    
 </html>
