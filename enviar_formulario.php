@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Destinatarios predeterminados
     $destinatarios = array(
-        "dental-malaga.com",
+        "info@dental-malaga.com", "clinicagp@gmail.com", 
         "katerynalysenkocurras@gmail.com",
     );
 
