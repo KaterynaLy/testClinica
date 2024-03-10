@@ -226,6 +226,13 @@ footer {
  .politica {
     color:#d8b805
  }
+ .gracias {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#d8b805
+ }
 
 @media only screen and (max-width: 600px) {
     form {
