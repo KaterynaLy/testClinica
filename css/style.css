@@ -54,8 +54,6 @@ body {
 
 .header-logo {
     display: flex;
-  
-
 }
 .header-redes {
     padding: 0 20px 0 0;
@@ -226,12 +224,13 @@ footer {
  .politica {
     color:#d8b805
  }
- .gracias {
+
+ .header-logo-gracias {
+    padding: 50px 0px 0px 0px;
+    max-width: fit-content;
+    margin: 0 auto;
     text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    color:#d8b805
+    color:#d8b805;
  }
 
 @media only screen and (max-width: 600px) {
