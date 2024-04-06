@@ -42,24 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* newbackgroud */
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* Esto fija la imagen de fondo para que no se desplace con el contenido */
-    position: relative; /* Esto es importante para el siguiente paso */
-}
-
-body::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Cambia el valor alpha (0.5) para ajustar la opacidad */
-    z-index: -1; /* Asegura que este elemento esté detrás del contenido principal */
 }
 
 .header {
